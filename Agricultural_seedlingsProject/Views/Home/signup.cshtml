@@ -1,0 +1,77 @@
+﻿@model Agricultural_seedlingsProject.Models.User
+@{
+    ViewBag.Title = "signup";
+}
+
+<div class="about-area   cover" style="        background-image: url('../../image/2.jpg');  background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+
+        <div class="row" style="height:100%;">
+            <div class="col-lg-7 row3" id="row2">
+
+                <div class="about-text2  reserv" style="   background: rgba(255, 255, 255, 1);">
+                    <h2 style="color:rgb(24, 151, 52); padding-left:93px; ">Sign Up</h2>
+                    @using (Html.BeginForm(actionName: "signup", controllerName: "Home", method: FormMethod.Post))
+                    {
+                        <div class="form-group row">
+                            <div class="col-sm-9" style="border-color: rgb(64, 175, 64);">
+                                @Html.EditorFor(ww => ww.FirstName, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "First Name" } })
+                                @Html.ValidationMessageFor(ww => ww.FirstName, "", htmlAttributes: new { @class = "text-warning errmsg" })
+                               
+                            </div>
+                            <div class="col-sm-9" style="border-color: rgb(64, 175, 64);">
+                                @Html.EditorFor(ww => ww.LastName, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "Last Name" } })
+                                @Html.ValidationMessageFor(ww => ww.LastName, "", htmlAttributes: new { @class = "text-warning errmsg" })
+                            </div>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(ww => ww.Email, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "Email" } })
+                                @Html.ValidationMessageFor(ww => ww.Email, "", htmlAttributes: new { @class = "text-warning" })
+                                <label class="text-warning"> @Html.DisplayFor(w => w.LoginErrorMsg) </label>
+                            </div>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(ww => ww.Password, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "Password" } })
+                                @Html.ValidationMessageFor(ww => ww.Password, "", htmlAttributes: new { @class = "text-warning" })
+                            </div>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(ww => ww.ConfirmPassword, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "ConfirmPassword" } })
+                                @Html.ValidationMessageFor(ww => ww.ConfirmPassword, "", htmlAttributes: new { @class = "text-warning" })
+                            </div>
+
+
+                            <div class="col-sm-9">
+                                @Html.EditorFor(ww => ww.BirthDate, additionalViewData: new
+                       {
+                           htmlAttributes = new
+                           {
+                               @class = "form-control",
+                               PlaceHolder = "Birth Date",
+                               Type = "Date"
+                  }
+                       })
+                                @Html.ValidationMessageFor(ww => ww.BirthDate, "", htmlAttributes: new { @class = "text-warning errmsg" })
+                            </div>
+
+
+
+                            <div class="col-sm-9">
+
+                                <button type="submit" class="btn btn-outline-success" style="background-color:white; color:rgb(24, 151, 52);; font-size:18px; margin-left: 37%;;">Sign Up </button>
+                            </div>
+
+                        </div>
+                    }
+                        <!-- <a style="color:white;"> Go To Events</a>-->
+                    </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+    </div>
+
+
+

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Agricultural_seedlingsProject.Models.Offer>
+@{
+    ViewBag.Title = "offer";
+}
+
+<div>
+    <!--Nav                -->
+    @{
+        string f = "forests";
+        string k = "false";
+    }
+
+    <div style="margin-top: 10%; width: 100%; margin-bottom: 6%; ">
+        <div class="row row-cols-1 row-cols-md-3" style="max-width: 100%; padding-left: 20px;">
+            @foreach (var item in Model)
+            {
+                if (item.Quantity == 0)
+                {
+
+
+
+
+                    <a href="/Home/checkoutform/?n=@item.ProductName&p=@item.NewPrice&t=@item.NurseryName" class="nav-link disabled">
+                        <div class="col mb-4  fru">
+                            <div class="card">
+                                <img src="~/image/@item.Image" class="card-img-top" alt="..." height="270px">
+                                <div class="card-body">
+                                    <h4 class="card-title">@item.ProductName</h4>
+                                    <p class="card-text">oLd Price: <span style="text-decoration: line-through; font-size:16px "> @item.OldPrice KD</span></p>
+                                    <p class="card-text">new Price: <span style=" font-size:17px; color:red ">  @item.NewPrice KD </span></p>
+                                    <p class="card-text">Quantity: @item.Quantity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                }
+                else
+                {
+                    <a href="/Home/checkoutform/?n=@item.ProductName&p=@item.NewPrice&t=@item.NurseryName">
+                        <div class="col mb-4  fru">
+                            <div class="card">
+                                <img src="~/image/@item.Image" class="card-img-top" alt="..." height="270px">
+                                <div class="card-body">
+                                    <h4 class="card-title">@item.ProductName</h4>
+                                    <p class="card-text">oLd Price: <span style="text-decoration: line-through; font-size:16px "> @item.OldPrice KD</span></p>
+                                    <p class="card-text">new Price: <span style=" font-size:17px; color:red ">  @item.NewPrice KD </span></p>
+                                    <p class="card-text">Quantity: @item.Quantity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                }
+
+
+
+            }
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!-- Footer -->
+    </div>
+
+
+

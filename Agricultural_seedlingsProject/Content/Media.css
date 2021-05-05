@@ -1,0 +1,180 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="reserv"] {
+    padding-left: 6%;
+    padding-right: 5%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: -48%;
+    margin-right: -17%;
+
+    top: 5%;
+    padding-top: 50px;
+  }
+  .about-img:before {
+    position: absolute;
+    content: "";
+    right: -8px;
+    top: 30px;
+    border: 10px solid rgba(36, 36, 36, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  [class*="row3"] {
+    margin-right: 10%;
+  }
+  [class*=" about-area "] {
+    padding-top: 33%;
+    padding-bottom: 38%;
+    padding-right: 3%;
+  }
+  [class*="log"] {
+    margin-left: -11%;
+  }
+
+  [class*="sign"] {
+    margin-left: 16%;
+    margin-bottom: 0%;
+  }
+  [class*="logtext"] {
+    margin-left: -10%;
+  }
+  [class*="about-text2"] {
+    padding-left: 12%;
+    padding-right: 7%;
+  }
+  .about-img2 img {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 20px;
+    top: 20%;
+  }
+  .about-text2 h2 {
+    color: #fc531f;
+    font-family: lobster;
+    font-size: 50px;
+    padding-left: 19%;
+  }
+  .col-sm-9 button {
+    margin-left: 40%;
+    padding: 10px;
+    font-size: 17px;
+  }
+
+  #row2 {
+    margin-left: 20%;
+    margin-right: 8%;
+  }
+  .reserv form button {
+    margin-left: 154px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    padding-left: 2%;
+  }
+  .card-group {
+    margin-left: 8%;
+
+    margin-right: 8%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card-group {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 8%;
+
+    margin-right: 8%;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .card-group {
+    margin-left: 13%;
+    display: block;
+    margin-right: 13%;
+    margin-bottom: 5%;
+  }
+  .card-group > .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 5%;
+  }
+  [class*="about-text2"] {
+    padding-left: 39%;
+    padding-right: 3%;
+  }
+  [class*="reserv"] {
+    padding-left: 31%;
+    padding-right: -3%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: -34%;
+    margin-right: -17%;
+    top: 5%;
+    padding-top: 50px;
+  }
+  [class*="about-text2"] {
+    padding-left: 20%;
+    padding-right: 3%;
+  }
+  .w-100 {
+    width: 211% !important;
+    height: 131%;
+  }
+  [class*="about-text2"] {
+    padding-left: 29%;
+    padding-right: 3%;
+  }
+  .row {
+    height: 80%;
+    margin-bottom: 9%;
+    margin-top: 9%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  [class*="sign"] {
+    margin-left: 4%;
+    margin-bottom: 0%;
+  }
+  [class*="log"] {
+    margin-left: 1%;
+    padding-right: 10px;
+  }
+  [class*="about-text2"] {
+    padding-left: 24%;
+    padding-right: 3%;
+    margin-top: 28%;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    padding-left: -31%;
+    padding-right: -9%;
+    padding-left: 0%;
+  }
+  .about-text2 h2 {
+    color: #fc531f;
+    font-family: lobster;
+    font-size: 50px;
+    text-align: center;
+    padding-right: 32%;
+    padding-left: 0%;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .about-text2 {
+    padding-top: 57%;
+    padding-left: 87px;
+    box-shadow: 2px 2px 2px 2px #c6c6c6;
+    padding-bottom: 133px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .about-text2 {
+    padding-top: 57%;
+    padding-left: 87px;
+    box-shadow: 2px 2px 2px 2px #c6c6c6;
+    padding-bottom: 133px;
+  }
+}

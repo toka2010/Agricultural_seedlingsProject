@@ -1,0 +1,90 @@
+﻿@model Agricultural_seedlingsProject.Models.Sales
+@{
+    ViewBag.Title = "checkoutform";
+}
+
+<div>
+    <!--Nav                -->
+    <div class="book">
+        <div class="about-area   cover" style="background-image: url('../../image/11.jpg'); background-size: cover;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-7" id="row2">
+
+                        <div class="about-text2  reserv">
+                            <h2 style="margin-right: 110px;">Checkout Form</h2>
+                            </br>
+
+                            <h3 style="text-align: center; margin-right: 130px; margin-bottom: 20px;"> Price:@Model.Price KD</h3>
+                            <form  action="/Home/checkoutform/?n=@Model.ProductName&p=@Model.Price&t=@Model.nursaryName" method="post">
+                                <div class="form-group row">
+                                    <fieldset class="form-group">
+                                        
+                                        <div class="form-check">
+                                            <label class="form-check-label" style="color: dimgray;">
+                                                <input type="radio" class="form-check-input"  id="optionsRadios1" value="option1" checked>
+                                                New Payment Card
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label" style="color: dimgray;">
+                                                <input type="radio" class="form-check-input"  id="optionsRadios2" value="option2">
+                                                K-NET
+                                            </label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                            <label class="form-check-label" style="color: dimgray;">
+                                                <input type="radio" class="form-check-input" id="optionsRadios3" value="option3">
+                                                Pay by Mobile Using Local   Methods
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" placeholder=" Card Name" required>
+                                    </div>
+                                    <div class="col-sm-9">
+
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="Card Number " required>
+                                    </div>
+
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="date" value="08-19" id="example-date-input" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="col-sm-9">
+
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="Security Code " required>
+                                    </div>
+
+
+
+                                    <div class="col-sm-9">
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="Zip/Postal Code " required>
+
+                                    </div>
+
+                                    <div class="col-sm-9">
+
+
+
+
+                                           <button type="submit" class="btn btn-outline-success">Pay Now </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!-- <a style="color:white;"> Go To Events</a>-->
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

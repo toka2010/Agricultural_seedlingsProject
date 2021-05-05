@@ -1,0 +1,80 @@
+﻿@model Agricultural_seedlingsProject.Models.Volunter
+@{
+    ViewBag.Title = "volunteer";
+}
+
+<div>
+    <!--Nav                -->
+
+    <div class="about-area">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6" style="margin-top: 5%;">
+
+                    <div class="about-text2">
+                        <h2 style="color: rgb(53, 133, 53);">Volunteer</h2>
+                        <form method="post" action="/Home/volunteer">
+                            <div class="form-group row">
+
+                                <div class="col-sm-9">
+
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="Email">
+                                    @Html.ValidationMessageFor(ww => ww.Email, "", htmlAttributes: new { @class = "text-danger errmsg" })
+                                </div>
+
+                                <div class="col-sm-9">
+
+                                    <select class="form-control" name="nursaryName">
+
+                                        <option value="fruit">Fruit nursery</option>
+                                        <option value="green">Green nursery</option>
+                                        <option value="ornamental">Ornamental nursery</option>
+                                        <option value="forest">Forest nursery</option>
+                                    </select>
+                                    @Html.ValidationMessageFor(ww => ww.nursaryName, "", htmlAttributes: new { @class = "text-danger errmsg" })
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="Product Name" name="ProductName">
+                                    @Html.ValidationMessageFor(ww => ww.ProductName, "", htmlAttributes: new { @class = "text-danger errmsg" })
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="Adress" name="Adress">
+                                    @Html.ValidationMessageFor(ww => ww.Adress, "", htmlAttributes: new { @class = "text-danger errmsg" })
+                                </div>
+
+
+                                <div class="col-sm-9">
+
+                                    <button type="submit" class="btn btn-success">Send </button>
+                                   <p style="color:red; font-size:17px;">@Model.volunteerErrorMsg</p>
+                                </div>
+
+                            </div>
+                        </form>
+                        <!-- <a style="color:white;"> Go To Events</a>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div class="about-img2">
+
+
+                        <img class="contactimg" src="../../image/hand.jpg" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+</div>
+

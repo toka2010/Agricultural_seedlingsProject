@@ -1,0 +1,70 @@
+﻿@model Agricultural_seedlingsProject.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<div>
+    <!--Nav                -->
+
+
+    <div class="about-area   cover" style="        background-image: url('../../image/2.jpg');  background-repeat: no-repeat; background-size: cover;
+">
+        <div class="container" style="height:70%">
+
+            <div class="row" style="height:80%; margin-bottom:9%; margin-top:9%; margin-left: 4%; ; ">
+                <div class="col-lg-7 row3" id="row2">
+
+                    <div class="about-text2  reserv" style=" padding-bottom:5%; padding-top:5%; background: rgba(248, 248, 250, 1); padding-right: 8%; ">
+                        <h2 style="color:rgb(24, 151, 52); padding-left:93px; " class="logtext">LOG IN</h2>
+                        @using (Html.BeginForm(actionName: "Login", controllerName: "Home", method: FormMethod.Post))
+                        {
+                    <div class="form-group row">
+
+                        <div class="col-sm-9" style="margin:3%;">
+                            @Html.EditorFor(ww => ww.Email, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "Email" } })
+                            @Html.ValidationMessageFor(ww => ww.Email, "", htmlAttributes: new { @class = "text-danger errmsg" })
+                        </div>
+                        <div class="col-sm-9" style="margin:3%;">
+                            @Html.EditorFor(ww => ww.Password, additionalViewData: new { htmlAttributes = new { @class = "form-control", PlaceHolder = "Password" } })
+                            @Html.ValidationMessageFor(ww => ww.Password, "", htmlAttributes: new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-sm-9" style="margin:3%;">
+                            @Html.ValidationMessageFor(ww => ww.LoginErrorMsg, "", htmlAttributes: new { @class = "text-danger" })
+                        </div>
+
+
+
+                            <div style="display:inline-block">
+
+                                <div class="col-sm-9 log" style="display:inline">
+
+                                    <button type="submit" class="btn btn-outline-success" style="background-color:white; color:rgb(45, 165, 85); font-size:18px; padding-left:5px; margin-left:57px; margin-top:10%;">Log In </button>
+                                </div>
+                                <div class="col-sm-9 sign" style="display:inline">
+
+                                    <a href="/Home/signup">  <button type="button" class="btn btn-outline-success sign" style="background-color:white; color:rgb(45, 165, 85); margin-top:10%;font-size:18px; margin-left:20px;">Sign Up </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        }
+                        <!-- <a style="color:white;"> Go To Events</a>-->
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+</div>
+
